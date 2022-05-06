@@ -13,6 +13,10 @@ spring:
           uri: lb://PAYMENT-SERVICE
           predicates:
             - Path=/payment/**
+        - id: store-service
+          uri: lb://STORE-SERVICE
+          predicates:
+            - Path=/store/**
     
 eureka:
   client:
@@ -25,4 +29,5 @@ eureka:
     hostname: localhost
     
     
-server:  port: 8989
+server:
+  port: 8989
