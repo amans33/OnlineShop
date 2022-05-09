@@ -17,12 +17,14 @@ spring:
           uri: lb://ACCOUNT-SERVICE
           predicates:
             - Path=/api/auth/**,/api/test/**
-
-                
-    config:
-      server:
-        git: uri:https://github.com/machindravagare/config-repo
-        
+        - id: store-service
+          uri: lb://STORE-SERVICE
+          predicates:
+            - Path=/store/**
+        - id: product-service
+          uri: lb://PRODUCT-SERVICE
+          predicates:
+            - Path=/product/**,/inventory/**
     
 eureka:
   client:
@@ -35,6 +37,5 @@ eureka:
     hostname: localhost
     
     
-
-    
-server:  port: 8989
+server:
+  port: 8989
