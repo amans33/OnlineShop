@@ -1,0 +1,19 @@
+{
+    "productName":"Product2",
+    "productShortDescription":"test",
+    "productDescription":"Test",
+    "brand":"test",
+    "price":"200"
+}
+
+{
+    "storeName":"Store3",
+    "addressLine1":"123",
+    "addressLine2":"Test",
+    "pinCode":"122335",
+    "city":"City1",
+    "state":"State1",
+    "country":"India",
+    "phone":"9090909090",
+    "email":"abc@xyz.com"
+}
