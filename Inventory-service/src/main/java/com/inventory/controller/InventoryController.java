@@ -33,7 +33,7 @@ public class InventoryController {
         }
 	}
 	
-	@GetMapping("/inventory")
+	@GetMapping("/getAll")
 	public ResponseEntity<OrderItemResponse> getAllInventoryItems(){
 		OrderItemResponse result = inventoryService.getAllInventoryItems();
 		return new ResponseEntity<OrderItemResponse>(result,HttpStatus.OK);
